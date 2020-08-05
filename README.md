@@ -9,7 +9,7 @@
 
 ![ChestXai_arch](Images/ChestXai_arch.png)
 
-### 1. Packages:
+### 1. Language and Package Versions:
 - Python 3.8.2
 - Numpy 1.19.1 and 1.16.4
 - Matplotlib 3.3.0
@@ -20,10 +20,10 @@
 - Tensorflow 2.2.0
 - Keras 2.3.0-tf
 
-### 2. IBM cloud server setup
+### 2. IBM Cloud Server Setup
 - Please read `Server_setup.md`
 
-### 3. ChestX.ai back-end
+### 3. ChestX.ai Back-end
 - ChestX.ai back-end files are in the folder `ChestXai_backend`
 - ChestX.ai back-end was setup on IBM Cloud virtual server.
 - The IBM Cloud Object Storage was mounted to virtual server for images and prediciton results storage. 
@@ -31,7 +31,7 @@
 - The `image upload portal` was built with HTML/CSS/JS and the files are in `templetes` and `static` folder.
 - The 3 tier Tensorflow models are in `xray` folder.
 
-### 4. ChestX.ai MS SQL server
+### 4. ChestX.ai Microsoft SQL Server
 - The files are in `SQL_Scripts`
 
 ### 5. Modeling 
