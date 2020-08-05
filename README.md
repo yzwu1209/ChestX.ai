@@ -29,16 +29,16 @@
 - The IBM Cloud Object Storage was mounted to virtual server for images and prediciton results storage. 
 - `App.py` retrieves chest X-ray prediction for front-end image upload portal, performs disease predictions, generates Grad-CAM heatmap, and updates the results to MS SQL server, 
 - The `image upload portal` was built with HTML/CSS/JS and the files are in `templetes` and `static` folder.
-- The 3 tier Tensorflow models are in `xray` folder.
+- The 3 tier Tensorflow models are included in `xray` folder.
 
 ### 4. ChestX.ai Microsoft SQL Server
-- The files are in `SQL_Scripts`
+- The files are included in `SQL_Scripts` folder. 
 
 ### 5. Modeling 
 - 
 
 ### 6. ChestX.ai Project Website
-- The files are in `ChestXai_Project_Wbsite`
+- The files are included in `ChestXai_Project_Wbsite` folder.
 
 
 
