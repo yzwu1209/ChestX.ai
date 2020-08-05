@@ -24,7 +24,7 @@
 - Please read `Server_setup.md`
 
 ### 3. ChestX.ai back-end
-- ChestX.ai back-end files are in the folder `ChestXai.backend`
+- ChestX.ai back-end files are in the folder `ChestXai_backend`
 - ChestX.ai back-end was setup on IBM Cloud virtual server.
 - The IBM Cloud Object Storage was mounted to virtual server for images and prediciton results storage. 
 - `App.py` retrieves chest X-ray prediction for front-end image upload portal, performs disease predictions, generates Grad-CAM heatmap, and updates the results to MS SQL server, 
