@@ -1,0 +1,220 @@
+/*!
+ * Start Bootstrap - Scrolling Nav (https://startbootstrap.com/templates/scrolling-nav)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-scrolling-nav/blob/master/LICENSE)
+ */
+ @import "compass";
+ @import url(https://fonts.googleapis.com/css?family=Nunito);
+ @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+
+html {
+     font-family: 'Nunito',sans-serif;
+}
+
+body {
+     font-family: 'Nunito',sans-serif;
+}
+
+header {
+  padding: 100px 0 44px;
+}
+
+section {
+  padding: 50px 0;
+}
+
+.btn-primary {
+  font: 'Nunito';
+}
+
+
+.uploadWrapper {
+  font-family: 'Nunito', sans-serif;
+}
+
+.imageUploadForm {
+  background: #edf2f6;
+  height: 520px;
+  width: 680px;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.imageUploadForm .helpText {
+  color: #909399;
+  display: block;
+  position: absolute;
+  top: 2%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+.imageUploadForm .helpText:after {
+  content: '\f067';
+  font-family: 'FontAwesome';
+  font-size: 150%;
+  color: #909399;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 4% auto auto auto;
+  width: 50%;
+  height: 50%;
+  border: 4px dashed #909399;
+}
+.imageUploadForm .pickFile {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  background: white;
+  height: 25%;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.imageUploadForm .pickFileButton {
+  display: inline-block;
+  padding: 0.7em 2em;
+  color: white;
+  background: #FB92AE;
+  text-decoration: none;
+}
+.imageUploadForm .pickFileButton:hover {
+  text-decoration: none;
+}
+.imageUploadForm .uploadButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.imageUploadForm.loading .helpText {
+  font-size: 0;
+  top: 7%;
+}
+.imageUploadForm.loading .helpText:before {
+  font-size: 20px;
+  content: 'Uploading...';
+}
+.imageUploadForm.loading .helpText:after {
+  display: none;
+}
+.imageUploadForm.loading .uploadedImg {
+  position: absolute;
+  bottom: 12.5%;
+  left: 12.5%;
+  width: 75%;
+  height: 65%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  border: 4px solid white;
+  -moz-transition: opacity ease-out;
+  -o-transition: opacity ease-out;
+  -webkit-transition: opacity ease-out;
+  transition: opacity ease-out;
+}
+.imageUploadForm.loading .unveil {
+  position: absolute;
+  background: #d7dce4;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  -moz-animation: toTop 4s forwards;
+  -webkit-animation: toTop 4s forwards;
+  animation: toTop 4s forwards;
+}
+.imageUploadForm.loading .unveil:after {
+  content: '';
+  position: absolute;
+  left: -3%;
+  bottom: 0;
+  height: 10px;
+  width: 106%;
+  background: #36a6b6;
+  color: #36a6b6;
+  border-radius: 5px;
+}
+.imageUploadForm.loading .uploadButton {
+  display: none;
+}
+
+.imageUploadForm.loading.loaded {
+  height: 200px;
+}
+.imageUploadForm.loading.loaded .uploadedImg {
+  opacity: 0;
+}
+.imageUploadForm.loading.loaded .helpText:before {
+  content: 'Upload Successfully!';
+}
+.imageUploadForm.loading.loaded .helpText:after {
+  display: block;
+  opacity: 0;
+  font-size: 0;
+  line-height: 100px;
+  -moz-animation: fadeIn 0.4s forwards;
+  -webkit-animation: fadeIn 0.4s forwards;
+  animation: fadeIn 0.4s forwards;
+  content: '\f058';
+  color: #36a6b6;
+  margin-top: 2%;
+  border-width: 0;
+}
+
+@-moz-keyframes toTop {
+  to {
+    height: 0;
+  }
+}
+@-webkit-keyframes toTop {
+  to {
+    height: 0;
+  }
+}
+@keyframes toTop {
+  to {
+    height: 0;
+  }
+}
+@-moz-keyframes fadeIn {
+  to {
+    opacity: 1;
+    font-size: 90px;
+  }
+}
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+    font-size: 90px;
+  }
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    font-size: 90px;
+  }
+}
