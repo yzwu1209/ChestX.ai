@@ -350,3 +350,53 @@ DELETE from xray_image
 where ImageID in (12);
 
 select * from model_result
+select * from xray_image
+select * from diagnosis
+
+UPDATE xray_image
+set ImageURL = 'Original_Image_URL_here'
+where ImageID = (select MAX(ImageID) from xray_image)
+
+select * from xray_image where ImageID = (select MAX(ImageID) from xray_image)
+
+Insert into dbo.model_result
+(
+    ImageID
+    ,ModelImageURL
+    ,OriginalImageURL
+    ,ModelChartURL
+    ,CreatedBy
+    ,CreatedDate
+) 
+Values
+(
+    (select MAX(ImageID) from xray_image)
+    ,'Model_Rendered_Image_URL_Here'
+    ,'Original_Image_URL_Here'
+    ,'Model_BarChart_URL_Here'
+    ,'ChestXai'
+    ,GETDATE()
+); 
+
+select * from patient A 
+    join xray_image B on A.PatientID = B.PatientID
+
+
+Insert into dbo.model_result
+(
+    ImageID
+    ,ModelImageURL
+    ,OriginalImageURL
+    ,ModelChartURL
+    ,CreatedBy
+    ,CreatedDate
+) 
+Values
+(
+    (select MAX(ImageID) from xray_image)
+    ,'DATA_INTEGRATION_Model_Rendered_Image_URL_Here'
+    ,'DATA_INTEGRATION_Original_Image_URL_Here'
+    ,'DATA_INTEGRATION_Model_BarChart_URL_Here'
+    ,'ChestXai'
+    ,GETDATE()
+); 
