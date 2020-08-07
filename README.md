@@ -35,7 +35,7 @@
 - The files are included in `SQL_Scripts` folder. 
 
 ### 5. Modeling 
-- 
+- The scriptes used for training the 3-tier models are stored in `ChestXai_modeling` folder
 
 ### 6. ChestX.ai Project Website
 - The files are included in `ChestXai_Project_Wbsite` folder.
